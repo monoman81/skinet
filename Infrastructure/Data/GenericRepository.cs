@@ -16,6 +16,12 @@ namespace Infrastructure.Data
             context.Set<T>().Add(entity);
         }
 
+        public async Task<int> CountAsync(ISpecification<T> spec)
+        {
+            var query = spec.ApplyCriteria(context.Set<T>().AsQueryable());
+            return await query.CountAsync();
+        }
+
         public void Delete(T entity)
         {
             context.Set<T>().Remove(entity);
