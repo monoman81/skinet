@@ -362,3 +362,6 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /API/appsettings.json
+/client/.angular/cache/21.2.1/client
+/client/.vscode
+/client/dist/client
