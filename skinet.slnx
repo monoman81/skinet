@@ -1,5 +1,9 @@
 <Solution>
   <Project Path="API/API.csproj" />
+  <Project Path="client/client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
   <Project Path="Core/Core.csproj" />
   <Project Path="Infrastructure/Infrastructure.csproj" />
 </Solution>
